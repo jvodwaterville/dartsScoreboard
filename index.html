@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Darts Scoreboard - Set Up</title>
+	<link rel="stylesheet" type="text/css" href="homeStyle.css" />
+	<script src="homejavascript.js"></script>
+</head>
+<body>
+<h1 class="chalk"><center>Start new darts Match</center></h1>
+	<div id="holder">
+		<p>Player 1 name: <input type="text" id="player1ChangeName" onChange="setName()" value="Player1"></p> 
+		<p>Player 2 name: <input type="text" id="player2ChangeName" onChange="setName()" value="Player2"></p>
+		Score from: <div class="select" id="score101" onClick="scoreSelected(101)">101</div>
+					<div class="select" id="score301" onClick="scoreSelected(301)">301</div> 
+					<div class="selected" id="score501" onClick="scoreSelected(501)">501</div> 
+					<div class="select" id="score1001" onClick="scoreSelected(1001)">1001</div></br></br>
+		Best of (sets): <div class="select" id="set1" onClick="setSelected(1)">1</div> 
+						<div class="select" id="set3" onClick="setSelected(3)">3</div> 
+						<div class="selected" id="set5" onClick="setSelected(5)">5</div> 
+						<div class="select" id="set7" onClick="setSelected(7)">7</div> 
+						<div class="select" id="set9" onClick="setSelected(9)">9</div> 
+						<div class="select" id="set11" onClick="setSelected(11)">11</div></br></br>
+		sets best of (legs): <div class="select" id="leg3" onClick="legSelected(3)">3</div> 
+							 <div class="selected" id="leg5" onClick="legSelected(5)">5</div> 
+							 <div class="select" id="leg7" onClick="legSelected(7)">7</div></br>
+						
+						<div id="startGame"  onClick="writeToLS()"><a href="game/index.html">Sart Game</a></div> 
+							 
+	</div>
+</body>
+</html>

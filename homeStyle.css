@@ -1,0 +1,70 @@
+@font-face 
+{
+	font-family: "chalk";
+	src: url("chalk/DK_Cool_Crayon.ttf") format('truetype');
+}
+
+#holder
+{
+	position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+	width:600px;
+	height:400px;
+	background:black;
+	color:white;
+	font-size:150%;
+	font-family:"chalk";
+	text-align:center;
+}
+.select
+{
+	display:inline-table;
+	width:50px;
+	border:1px solid white;
+}
+.selected
+{
+	display:inline-table;
+	width:50px;
+	border:1px solid white;
+	background:gray;
+}
+.select:hover
+{
+	background:white;
+	color:black;
+	cursor:pointer; 
+}
+#startGame
+{
+	width:100px;
+	border:1px solid white;
+	margin:auto;
+	margin-top:10px;
+}
+#startGame a
+{
+	display:block;
+	color:white;
+	text-decoration:none;
+}
+#startGame:hover
+{
+	background:white;
+	color:black;
+	cursor:pointer; 
+}
+#startGame a:hover
+{
+	background:white;
+	color:black;
+	cursor:pointer; 
+}
+.chalk
+{
+	font-family:"chalk";
+}

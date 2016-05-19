@@ -1,0 +1,135 @@
+<html>
+<head>
+	<title>Darts Scoreboard - Game</title>
+	<link rel="stylesheet" type="text/css" href="myStyle.css" />
+	<script src="javascript.js"></script>
+</head>
+<body>
+	<div id="result"></div>
+	<div id="topLine">
+		<div id="player1">
+			<div class="playerName">
+				<span id="player1Name"> Player1</span>
+				<div id ="player1Throw"></div>
+			</div>
+			<div class="finish">
+				<p id="player1finish">No out</p>
+			</div>
+			<div id="player1Score" class="center">
+			501
+			</div>
+			<div class="setsLegs">
+				<p id ="player1Sets">Sets: 0</p>
+				<p id ="player1Legs">Legs: 0</p>
+			</div>
+		</div>
+		<div id="player2">
+			<div class="playerName">
+				<span id="player2Name"> Player2</span>
+				<div id ="player2Throw"></div>
+			</div>
+			<div class="setsLegs">
+				<p id ="player2Sets">Sets: 0</p>
+				<p id ="player2Legs">Legs: 0</p>
+			</div>
+			<div id="player2Score" class="center">
+			501
+			</div>
+			<div class="finish">
+				<p id="player2finish">No out</p>
+			</div>
+		</div>
+	</div>
+	<div id="spacer"></div>
+	<div id="mainBody">
+		<div id="player1scoreBoard">
+			<div id="player1chalkBoard" class="chalkBoard">
+				<p>Scores</p>
+			</div>
+		</div>
+		
+		<div id="enterScore">
+			<input id="scoreInput" type="text" name="score" onkeypress="scoreDartsEnter(event)">
+			<table id="keypad" cellpadding="5" cellspacing="3">
+				<tr>
+					<td onclick="addNumber('1');">1</td>
+					<td onclick="addNumber('2');">2</td>
+					<td onclick="addNumber('3');">3</td>
+				</tr>
+				<tr>
+					<td onclick="addNumber('4');">4</td>
+					<td onclick="addNumber('5');">5</td>
+					<td onclick="addNumber('6');">6</td>
+				</tr>
+				<tr>
+					<td onclick="addNumber('7');">7</td>
+					<td onclick="addNumber('8');">8</td>
+					<td onclick="addNumber('9');">9</td>
+				</tr>
+				<tr>
+					<td onclick="removeNumber('0');">clear</td>
+					<td onclick="addNumber('0');">0</td>
+					<td onclick="scoreDarts();">submit</td>
+				</tr>
+			</table>
+			<table class="statsTable" cellpadding="5" cellspacing="3">
+					<tr>
+						<td><span id="enterPlayer1Name"> Player1</span></td>
+						<td>Stats</td>
+						<td><span id="enterPlayer2Name"> Player1</span></td>
+					</tr>
+					<tr>
+						<td id="player1average">0</td>
+						<td>3-dart average</td>
+						<td id="player2average">0</td>
+					</tr>
+					<tr>
+						<td id="player1180">0</td>
+						<td>180's</td>
+						<td id="player2180">0</td>
+					</tr>
+					<tr>
+						<td id="player1170">0</td>
+						<td>170+</td>
+						<td  id="player2170">0</td>
+					</tr>
+					<tr>
+						<td id="player1140">0</td>
+						<td>140+</td>
+						<td id="player2140">0</td>
+					</tr>
+					<tr>
+						<td id="player1100">0</td>
+						<td>100+</td>
+						<td id="player2100">0</td>
+					</tr>
+					<tr>
+						<td id="player160">0</td>
+						<td>60+</td>
+						<td id="player260">0</td>
+					</tr>
+					<tr>
+						<td id="player1highOut">0</td>
+						<td>Highest checkout</td>
+						<td id="player2highOut">0</td>
+					</tr>
+					<tr>
+						<td id="player1totalLegs">0</td>
+						<td>Legs won (session total)</td>
+						<td id="player2totalLegs">0</td>
+					</tr>
+				</table>
+		</div>
+	
+		<div id="player2scoreBoard">
+			<div id="player2chalkBoard" class="chalkBoard">
+				<p>Scores</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="startNewGame" id="startGame"><a href="../index.html">Sart New Match (New players and set up)</a></div> 
+	<div class="startNewGame" id="resetGame" onclick="resetAndStartNew();">Rematch (Keep curent players, stats and set up)</div> 
+	
+</body>
+</html>
